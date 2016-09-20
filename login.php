@@ -46,12 +46,54 @@
 	
 ?>
 
+<?php
+
+	//var_dump($_GET);
+	
+	//echo "<br>";
+
+	//var_dump($_POST);
+	$questEmailerror = "*";
+	
+	if (isset ($_POST["questEmail"])) {
+		
+	
+		if (empty($_POST["questEmail"])){
+			$questEmailerror="V2li on kohustuslik";
+			
+		}
+	}
+	
+	
+?>
 
 
+<?php
 
+	//var_dump($_GET);
+	
+	//echo "<br>";
 
+	//var_dump($_POST);
+	$ratingEmailerror = "*";
+	
+	if (isset ($_POST["ratingEmail"])) {
+		
+	
+		if (empty($_POST["ratingEmail"])){
+			$ratingEmailerror="V2li on kohustuslik";
+			
+		}
+	}
+	
+	
+?>
 
+<?php
 
+echo "Minu MVP on automaatne internetikiiruse mõõtja"
+
+?>
 
 <!DOCTYPE html>
 <html>
@@ -103,7 +145,7 @@
 	
 	<form method="POST">
 		
-		<input name="questionEmail" placeholder="Sinu E-mail" type="email">  
+		<input name="questEmail" placeholder="Sinu E-mail" type="email">  <?php   echo $questEmailerror; ?>
 		<br> <br>
 		<input type="text" placeholder="Küsimus" type="text">
 		<br> <br>
@@ -122,7 +164,7 @@
 	
 	<form method="POST">
 		
-		<input name="quest" placeholder="Sinu Kasutaja" type="email">  
+		<input name="ratingEmail" placeholder="Sinu Kasutaja" type="email">  <?php   echo $ratingEmailerror; ?>
 		<br> <br>
 		<input type="text" placeholder="Hinnang 1-10" type="text">
 		<br> <br>
