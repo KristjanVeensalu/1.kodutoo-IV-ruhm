@@ -91,3 +91,44 @@
 	</form>	
 </body>
 </html>
+
+
+<html>
+	<head>
+		<title>Küsi meilt</title>
+</head>
+<body>
+
+<h1>Küsi Meilt</h1>
+	
+	<form method="POST">
+		
+		<input name="questionEmail" placeholder="Sinu E-mail" type="email">  
+		<br> <br>
+		<input type="text" placeholder="Küsimus" type="text">
+		<br> <br>
+		<input type="submit" value="Saada küsimus">
+	</form>	
+</body>
+</html>
+
+<html>
+	<head>
+		<title></title>
+</head>
+<body>
+
+<h1>Hinda lehekülge</h1>
+	
+	<form method="POST">
+		
+		<input name="quest" placeholder="Sinu Kasutaja" type="email">  
+		<br> <br>
+		<input type="text" placeholder="Hinnang 1-10" type="text">
+		<br> <br>
+		<input type="submit" value="Hinda lehekülge">
+	</form>	
+</body>
+</html>
+
+
