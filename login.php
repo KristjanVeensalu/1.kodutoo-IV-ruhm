@@ -1,5 +1,9 @@
 <?php
 
+//Mõte oli automaatne internetikiiruse mõõtja
+
+
+
 	//var_dump($_GET);
 	
 	//echo "<br>";
