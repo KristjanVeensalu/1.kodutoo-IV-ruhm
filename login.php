@@ -17,6 +17,20 @@
 	}
 	
 	
+	
+	
+		$ageerror = "*";
+	
+	if (isset ($_POST["age"])) {
+		
+	
+		if (empty($_POST["age"])){
+			$ageerror="V2li on kohustuslik";
+			
+		}
+	}
+	
+	
 ?>
 
 <?php
@@ -89,11 +103,7 @@
 	
 ?>
 
-<?php
 
-echo "Minu MVP on automaatne internetikiiruse mõõtja"
-
-?>
 
 <!DOCTYPE html>
 <html>
@@ -110,12 +120,12 @@ echo "Minu MVP on automaatne internetikiiruse mõõtja"
 		<br> <br>
 		<input name="loginpassword" placeholder="Password" type="password">
 		<br> <br>
+		<input name="specialid" placeholder="Account ID" type="Identification">
+		<br> <br>
 		<input type="submit" value="Log in">
 	</form>	
 </body>
-</html>
 
-<html>
 	<head>
 		<title>Loo Kasutaja</title>
 </head>
@@ -128,6 +138,8 @@ echo "Minu MVP on automaatne internetikiiruse mõõtja"
 		<input name="signupEmail" placeholder="E-mail" type="email"> <?php   echo $signupEmailerror; ?>
 		<br> <br>
 		<input name="signupPassword" placeholder="Password" type="password"> <?php   echo $signupPassworderror; ?>
+		<br> <br>
+		<input name="age" placeholder="Vanus" type="age"> <?php   echo $ageerror; ?>
 		<br> <br>
 		<input type="submit" value="Loo kasutaja">
 	</form>	
